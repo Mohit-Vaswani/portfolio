@@ -154,4 +154,131 @@ body {
     , rgba(11, 1, 29, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  transition: 0.4s;
 }
+
+.grid-box:first-child{
+  background-image: url('/line.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.grid-box:hover{
+  background: linear-gradient(110deg, rgba(168, 128, 255, 0.00) 25.10%, rgba(168, 128, 255, 0.32) 72.57%, rgba(168, 128, 255, 0.00) 100%), rgba(255, 255, 255, 0.10);
+}
+.grid-box:first-child:hover{
+  background: linear-gradient(110deg, rgba(168, 128, 255, 0.00) 25.10%, rgba(168, 128, 255, 0.32) 72.57%, rgba(168, 128, 255, 0.00) 100%), rgba(255, 255, 255, 0.10);
+  background-image: url('/line.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Sliding text */
+
+.grid-box:last-child{
+  overflow: hidden;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.orb {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 0 24.7px;
+  float: left;
+  transition: all .2s ease-out;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(168, 128, 255, 0.12) 0%, rgba(168, 128, 255, 0) 100%), rgba(255, 255, 255, 0.05);
+}
+
+.marquee {
+  height: 200px;
+  width: 800px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee--inner {
+  display: block;
+  width: 200%;
+  margin: 70px 0;
+  position: absolute;
+  animation: marquee 20s linear infinite;
+}
+/* 
+.marquee--inner:hover {
+  animation-play-state: paused;
+} */
+
+/*.half {
+  float: left;
+  width: 10%;
+}*/
+
+/* span {
+  float: left;
+  width: 50%;
+} */
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+/* For Progress Bar */
+
+.grid-box:nth-child(3){
+  align-items: center;
+  overflow: hidden;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.progress {
+  margin: 10px;
+  width: 700px;
+}
+
+.progress-bar {
+  background-color: #55a63f;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-bar-success {
+  background-color: #55a63f;
+}
+
+.progress-bar-striped {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 40px 20px;
+}
+
+/* .active {
+  animation: progress-stripes 2s linear infinite;
+}
+
+@keyframes progress-stripes {
+  0% {
+    background-position: 40px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+} */
