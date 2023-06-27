@@ -4,16 +4,18 @@ import Benefits from "@/Components/Benefits";
 import CustomCursor from "@/Components/CustomCursor";
 import Hero from "@/Components/Hero";
 import Stars from "@/Components/Stars";
+import Work from "@/Components/Work";
 
 export default function Home() {
   return (
     <section className="overflow-x-hidden w-full">
       <CustomCursor/>
-      <Stars/>
+      {/* <Stars/> */}
       <Hero/>
       <About/>
       <About2/>
       <Benefits/>
+      <Work/>
     </section>
   )
 }

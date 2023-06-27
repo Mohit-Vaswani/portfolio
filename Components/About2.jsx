@@ -2,10 +2,11 @@ import Image from "next/image"
 
 const About2 = () => {
   return (
-    <div className="w-full h-screen dark-blue-bg2 flex-all">
-        <div className="w-4/12 flex gap-5 flex-col">
+    <div className="w-full h-full lg:h-screen dark-blue-bg2 flex-all py-10 lg:py-0 relative">
+      <div className="shootingstar"/>
+        <div className="w-9/12 sm:w-8/12 xl:w-4/12 flex gap-5 flex-col">
         <Image src="/img.jpg" alt="My Image" width={70} height={70} className="rounded-full"/>
-        <div className="">
+        <div className="text-lg lg:text-xl">
             <p>Hey I am Mohit 😎</p> <br />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellendus enim odio earum recusandae ea similique facere explicabo ipsa ut.</p> <br />
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quisquam voluptates doloremque cumque similique expedita neque optio veniam hic ut laborum blanditiis a, quam odit laudantium non quaerat vitae minima voluptatum in repellat officia iste. Dolorem cupiditate tempore eum quisquam?</p><br />

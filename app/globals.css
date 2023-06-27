@@ -40,18 +40,18 @@ body {
   border-radius: 3.73311px;
 }
 
-/* 
-.star {
+
+.shootingstar {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
+  top: 5rem;
+  left: 10rem;
+  width: 5px;
+  height: 5px;
   background-color: #fff;
-  animation: twinkle 3s infinite;
+  animation: shoot 3s infinite;
 }
 
-@keyframes twinkle {
+@keyframes shoot {
   0% {
     opacity: 0;
     transform: translate(0, 0);
@@ -63,7 +63,7 @@ body {
     opacity: 0;
     transform: translate(200px, 200px);
   }
-} */
+}
 
 /* Home Stars */
 
@@ -199,7 +199,7 @@ body {
 
 .marquee {
   height: 200px;
-  width: 800px;
+  width: 1000px;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
