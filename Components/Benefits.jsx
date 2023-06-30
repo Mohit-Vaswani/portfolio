@@ -1,9 +1,10 @@
 import Image from "next/image"
 import ProgressBar from "./Progress"
+import Stars from "./Stars"
 
 const Benefits = () => {
     return (
-        <div className="w-full h-full lg:h-screen dark-blue-bg2 relative flex align-top justify-center flex-col gap-10 text-center py-10 px-10">
+        <div className="w-full h-full lg:h-screen dark-blue-bg relative flex align-top justify-center flex-col gap-10 text-center py-10 px-10">
             <div className="horizontal-line absolute top-0"></div>
             <h2 className="text-6xl">Benefits</h2>
             <div className="grid lg:grid-flow-col grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-8">
@@ -94,6 +95,7 @@ const Benefits = () => {
                     <p className="text-2xl">Strong Fundamentals and Knowledge of Latest Tech</p>
                 </div>
             </div>
+            <Stars/>
             <div className="horizontal-line absolute bottom-0"></div>
         </div>
     )

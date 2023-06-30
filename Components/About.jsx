@@ -1,8 +1,9 @@
+import Stars from "./Stars"
 
 
 const About = () => {
     return (
-        <div className="w-full h-full sm:h-screen dark-blue-bg2 flex-all2 relative aboutbg py-20 lg:py-0">
+        <div className="w-full h-full sm:h-screen dark-blue-bg flex-all2 relative aboutbg py-20 lg:py-0">
             <div className="horizontal-line absolute top-0"></div>
             <div className="glow-button">
                 As a developer, My goal is to do 👇
@@ -12,6 +13,7 @@ const About = () => {
                 I like to develop products with high-end design and functionalities that stand out in the market and works suuuuper smoothly.
             </p>
             <div className="horizontal-line absolute bottom-0"></div>
+            <Stars/>
         </div>
     )
 }

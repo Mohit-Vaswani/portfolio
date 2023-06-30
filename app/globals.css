@@ -24,13 +24,13 @@ body {
 }
 
 .dark-blue-bg {
-  background: #0B011D;
+  background: #1e1e21;
 }
 
 .dark-blue-bg2 {
   background: radial-gradient(50% 50% at 50% 50%, rgba(126, 61, 255, 0.08) 0%, rgba(126, 61, 255, 0) 100%)
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    , #0B011D;
+    , #1e1e21;
 }
 
 .horizontal-line {
@@ -56,9 +56,11 @@ body {
     opacity: 0;
     transform: translate(0, 0);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: translate(200px, 200px);
@@ -149,9 +151,6 @@ body {
 }
 
 .grid-box {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(126, 61, 255, 0.04) 0%, rgba(126, 61, 255, 0) 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    , rgba(11, 1, 29, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   display: flex;
@@ -162,17 +161,18 @@ body {
   transition: 0.4s;
 }
 
-.grid-box:first-child{
+.grid-box:first-child {
   background-image: url('/line.svg');
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
 }
 
-.grid-box:hover{
+.grid-box:hover {
   background: linear-gradient(110deg, rgba(168, 128, 255, 0.00) 25.10%, rgba(168, 128, 255, 0.32) 72.57%, rgba(168, 128, 255, 0.00) 100%), rgba(255, 255, 255, 0.10);
 }
-.grid-box:first-child:hover{
+
+.grid-box:first-child:hover {
   background: linear-gradient(110deg, rgba(168, 128, 255, 0.00) 25.10%, rgba(168, 128, 255, 0.32) 72.57%, rgba(168, 128, 255, 0.00) 100%), rgba(255, 255, 255, 0.10);
   background-image: url('/line.svg');
   background-repeat: no-repeat;
@@ -181,7 +181,7 @@ body {
 
 /* Sliding text */
 
-.grid-box:last-child{
+.grid-box:last-child {
   overflow: hidden;
   margin: 0 auto;
   align-items: center;
@@ -212,6 +212,7 @@ body {
   position: absolute;
   animation: marquee 20s linear infinite;
 }
+
 /* 
 .marquee--inner:hover {
   animation-play-state: paused;
@@ -228,13 +229,18 @@ body {
 } */
 
 @keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
 }
 
 /* For Progress Bar */
 
-.grid-box:nth-child(3){
+.grid-box:nth-child(3) {
   align-items: center;
   overflow: hidden;
   gap: 1rem;
@@ -257,16 +263,14 @@ body {
 }
 
 .progress-bar-striped {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent);
   background-size: 40px 20px;
 }
 
@@ -282,3 +286,62 @@ body {
     background-position: 0 0;
   }
 } */
+
+
+/* Proof */
+
+.proof-box {
+  border-radius: 16px;
+  background: radial-gradient(70.71% 70.71% at 50% 50%, #242428 0%, #1e1e21 100%), #1e1e21;
+  width: 1000px;
+  min-height: 700px;
+}
+
+.whiteSvg {
+  border: 1px solid white;
+  padding: 5px;
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.whiteSvg img {
+  width: 30px;
+  height: auto;
+  fill: white;
+}
+
+.whiteSvg img path {
+  fill: white;
+}
+
+.right-bottom-border {
+  background-image: url('/rightbottomborder.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.left-bottom-border {
+  background-image: url('/leftbottom.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.right-top-border {
+  background-image: url('/righttop.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.left-top-border {
+  background-image: url('/lefttop.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.light-white:hover {
+  background: linear-gradient(110deg, rgba(102, 76, 157, 0) 25.10%, #1e1e2150 72.57%, rgba(168, 128, 255, 0.00) 100%), rgba(255, 255, 255, 0.10);
+  border-radius: 6px;
+}
