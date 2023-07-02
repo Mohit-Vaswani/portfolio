@@ -3,7 +3,7 @@ import Stars from "./Stars"
 
 const About2 = () => {
   return (
-    <div className="w-full h-full lg:h-screen dark-blue-bg flex-all py-10 lg:py-0 relative">
+    <div className="w-full h-full dark-blue-bg flex-all py-10 relative">
       <div className="shootingstar"/>
         <div className="w-9/12 sm:w-8/12 xl:w-4/12 flex gap-5 flex-col">
         <Image src="/img.jpg" alt="My Image" width={70} height={70} className="rounded-full"/>

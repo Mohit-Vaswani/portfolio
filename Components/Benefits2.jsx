@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import DarkModeSwitch from "./DarkModeSwitch"
 
@@ -5,7 +7,7 @@ const Benefits2 = () => {
   return (
     <div className="w-full h-full lg:h-full dark-blue-bg relative flex align-top justify-center flex-col gap-10 text-center py-10 px-10">
       <div className="horizontal-line absolute top-0"></div>
-      <div className="grid lg:grid-flow-col grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-8 w-10/12 mx-auto">
+      <div className="grid lg:grid-flow-col grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-8 w-1300 mx-auto">
         {/* 5 */}
         <div className="col-span-1 lg:col-span-2 h-96 grid-box flex-col w-full p-5 gap-10">
           <div className="flex text-4xl flex-col gap-2">
@@ -57,31 +59,111 @@ const Benefits2 = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className="h-96 grid-box">
-          <DarkModeSwitch/>
+        <div className="h-96 grid-box justify-center items-center">
+          <DarkModeSwitch />
         </div>
         {/* 1 */}
-        <div className="h-96 grid-box flex-col gap-5">
-          <div>
-          <h2 className="text-3xl">Figma Expert</h2>
+        <div className="h-96 grid-box flex-col figma-box overflow-hidden">
+          <div className="text-left p-3">
+            <h2 className="text-2xl font-bold text-gray-300">Figma's Expert</h2>
+            <p>I have been using Figma, since when I started programming.</p>
           </div>
-          <div className="flex justify-between w-full mt-10">
-          <Image src="/figma-logo.svg" alt="JavaScript Logo" width={150} height={150}/>
-          <Image src="/new-star.svg" alt="JavaScript Logo" width={200} height={200}/>
+          <div className="flex justify-between w-full mt-8">
+            <Image src="/figma-logo.svg" alt="JavaScript Logo" width={150} height={150} className="translate-x-10-neg transition-all duration-800" />
+            <Image src="/new-star.svg" alt="JavaScript Logo" width={200} height={200} className="translate-x-10 transition-all duration-800" />
           </div>
         </div>
         {/* 2 */}
         <div className="lg:col-start-3 h-96 grid-box">
+
         </div>
         {/* 3 */}
         <div className=" h-96 grid-box flex-col"></div>
         {/* 4 */}
         <div className="col-span-1 lg:col-span-2 h-96 grid-box flex-col text-center w-full">
+          <h2 className="text-left pl-6 text-4xl my-10 font-bold">Clean Work <br/> &  Smooth Flow</h2>
+          <div className="relative w-full h-56 overflow-hidden bg-transparent left-right-hover">
+            <div className="absolute inset-0 flex w-fit mb-8" id="main-slider"
+              onMouseEnter={() => {
+                const div = document.getElementById("main-slider");
+                div.classList.add("translate-n-50", "transition-3-sec");
+              }}
 
+              onMouseLeave={() => {
+                const div = document.getElementById("main-slider");
+                div.classList.remove("translate-n-50");
+              }}>
+              <div className="w-48 mx-5 transition-transform duration-500 ease-in-out hover:translate-x-1/6 user-box user-box-1">
+                <ul className="flex gap-2">
+                  <Image src="/human-1.png" alt="" width={30} height={30} className="object-cover rounded-full bg-white w-6 h-6" />
+                  <h2>Sofia</h2>
+                </ul>
+                <p>I am a graphic designer.</p>
+                <button className="rounded-full py-1 px-3 text-sm">See my work</button>
+              </div>
+              <div className="w-48 mx-5 transition-transform duration-500 ease-in-out hover:translate-x-1/6 user-box user-box-2">
+                <ul className="flex gap-2">
+                  <Image src="/human-2.png" alt="" width={30} height={30} className="object-cover rounded-full bg-white w-6 h-6" />
+                  <h2>Adam</h2>
+                </ul>
+                <p>I am content writer.</p>
+                <button className="rounded-full py-1 px-3 text-sm">See my work</button>
+              </div>
+              <div className="w-48 mx-5 transition-transform duration-500 ease-in-out hover:translate-x-1/6 user-box user-box-3">
+                <ul className="flex gap-2">
+                  <Image src="/human-3.png" alt="" width={30} height={30} className="object-cover rounded-full bg-white w-6 h-6" />
+                  <h2>Tom</h2>
+                </ul>
+                <p>I am a product developer.</p>
+                <button className="rounded-full py-1 px-3 text-sm">See my work</button>
+              </div>
+              <div className="w-48 mx-5 transition-transform duration-500 ease-in-out hover:-translate-x-1/6 user-box user-box-4">
+                <ul className="flex gap-2">
+                  <Image src="/human-4.png" alt="" width={30} height={30} className="object-cover rounded-full bg-white w-6 h-6" />
+                  <h2>Kavya</h2>
+                </ul>
+                <p>I am a fashion designer.</p>
+                <button className="rounded-full py-1 px-3 text-sm">See my work</button>
+              </div>
+              <div className="w-48 mx-5 transition-transform duration-500 ease-in-out hover:-translate-x-1/6 user-box user-box-5">
+                <ul className="flex gap-2">
+                  <Image src="/human-5.png" alt="" width={30} height={30} className="object-cover rounded-full bg-white w-6 h-6" />
+                  <h2>Chhavi</h2>
+                </ul>
+                <p>I am an expert chef.</p>
+                <button className="rounded-full py-1 px-3 text-sm">See my work</button>
+              </div>
+              <div className="w-48 mx-5 transition-transform duration-500 ease-in-out hover:-translate-x-1/6 user-box user-box-6">
+                <ul className="flex gap-2">
+                  <Image src="/human-6.png" alt="" width={30} height={30} className="object-cover rounded-full bg-white w-6 h-6" />
+                  <h2>Sam</h2>
+                </ul>
+                <p>I am an animal trainer.</p>
+                <button className="rounded-full py-1 px-3 text-sm">See my work</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className=" h-96 grid-box w-full">
+        <div
+          className="h-96 grid-box w-full gpt-box overflow-hidden p-4 text-left transition-all duration-700"
+          onMouseEnter={() => {
+            const image = document.getElementById("gpt-image");
+            image.classList.add("rotate-center", "translate-y-4");
+          }}
 
+          onMouseLeave={() => {
+            const image = document.getElementById("gpt-image");
+            image.classList.remove("rotate-center", "translate-y-10");
+          }}
+
+        >
+          <h2 className="text-5xl font-bold">10X Faster</h2>
+          <p className="text-lg mt-2">
+            With the power of <span className="underline">Prompt Engenerring</span>, I have become a 10X fast dev, I can learn fast, build fast, and deploy the product super fast.
+          </p>
+          <Image id="gpt-image" src="/chatgpt.svg" className="translate-y-10 self-center transition-all duration-500" width={200} height={200} />
         </div>
+
         {/* 5 */}
       </div>
       <div className="horizontal-line absolute bottom-0"></div>

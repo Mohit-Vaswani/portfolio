@@ -17,10 +17,10 @@ const DarkModeSwitch = () => {
       }`}
       onClick={handleToggle}
     >
-      <div
+      <div 
         className={`w-6 h-6 bg-white rounded-full shadow-md transform ${
-          isDarkMode ? 'translate-x-6' : 'translate-x-1'
-        } transition-transform duration-300`}
+          isDarkMode ? 'translate-x-0' : 'translate-x-0'
+        } transition-transform duration-600`}
       ></div>
     </div>
   );
