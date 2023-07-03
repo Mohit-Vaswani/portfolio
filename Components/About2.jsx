@@ -15,6 +15,8 @@ const About2 = () => {
         </div>
         </div>
         <Stars/>
+        
+        <div className="horizontal-line absolute bottom-0"></div>
     </div>
   )
 }

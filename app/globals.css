@@ -282,8 +282,9 @@ body {
 .proof-box {
   border-radius: 16px;
   background: radial-gradient(70.71% 70.71% at 50% 50%, #242428 0%, #1e1e21 100%), #1e1e21;
-  width: 1000px;
-  min-height: 700px;
+  width: 800px;
+  min-height: 600px;
+  border: 1px solid #5959598b;
 }
 
 .whiteSvg {
@@ -346,6 +347,7 @@ body {
   border: 3px solid #181818;
   background: linear-gradient(180deg, #242325 0%, #171619 100%);
   box-shadow: 0px 13px 10px 0px rgba(0, 0, 0, 0.35), 0px 1px 2px 2px #525154 inset;
+  transition: all 0.4s;
 }
 
 .w-1300 {
@@ -460,4 +462,75 @@ body {
 
 .user-box button:hover {
   background: rgba(66, 66, 66, 0.354);
+}
+
+.tranlate-nb-16{
+  transform: translateY(-3.5rem);
+  margin-left: 3rem;
+}
+
+.tranlate-nb-10{
+  transform: translateY(-6.5rem);
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #676767,
+    0 0 10px #878787,
+    0 0 20px #868686,
+    0 0 40px rgb(101, 4, 199),
+    0 0 80px rgb(101, 4, 199),
+    0 0 90px rgb(101, 4, 199),
+    0 0 100px rgb(101, 4, 199),
+    0 0 150px rgb(101, 4, 199);
+    margin-top: 4rem;
+    transition: all 0.4s;
+}
+
+.seo-box:hover .neon {
+  color: #fff;
+  text-shadow:
+    0 0 10px #676767,
+    0 0 20px #878787,
+    0 0 40px #868686,
+    0 0 80px rgb(173, 4, 199),
+    0 0 120px rgb(173, 4, 199),
+    0 0 130px rgb(173, 4, 199),
+    0 0 200px rgb(173, 4, 199),
+    0 0 250px rgb(173, 4, 199);
+    margin-top: 4rem;
+    transition: all 0.4s;
+}
+
+.seo-box{
+  justify-content: flex-start;
+}
+
+/* 3d-obj */
+
+.infinite-rotate {
+	-webkit-animation: infinite-rotate 6s ease-in-out infinite both;
+	        animation: infinite-rotate 6s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes infinite-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes infinite-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }

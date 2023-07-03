@@ -15,8 +15,8 @@ export default function Home() {
       <Stars/>
       <Hero/>
       <About/>
-      <About2/>
       <Benefits2/>
+      <About2/>
       <Proof/>
       <Work/>
     </section>
