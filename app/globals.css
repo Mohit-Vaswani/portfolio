@@ -534,3 +534,8 @@ body {
             transform: rotate(360deg);
   }
 }
+
+.work-box{
+  border: 1px solid #5959598b;
+  background: radial-gradient(70.71% 70.71% at 50% 50%, #242428 0%, #1e1e21 100%), #1e1e21;
+}

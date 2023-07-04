@@ -2,6 +2,7 @@ import About from "@/Components/About";
 import About2 from "@/Components/About2";
 import Benefits from "@/Components/Benefits";
 import Benefits2 from "@/Components/Benefits2";
+import Contact from "@/Components/Contact";
 import CustomCursor from "@/Components/CustomCursor";
 import Hero from "@/Components/Hero";
 import Proof from "@/Components/Proof";
@@ -19,6 +20,7 @@ export default function Home() {
       <About2/>
       <Proof/>
       <Work/>
+      <Contact/>
     </section>
   )
 }
