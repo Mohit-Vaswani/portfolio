@@ -17,7 +17,7 @@ const Benefits2 = () => {
     <div className="w-full h-full lg:h-full dark-blue-bg relative flex align-top justify-center flex-col gap-10 text-center py-10 px-10">
       <div className="horizontal-line absolute top-0"></div>
       <h2 className="text-3xl md:text-7xl font-bold my-6">Let's Talk About Me 🤠</h2>
-      <div className="grid lg:grid-flow-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-8 lg:w-1300 mx-auto">
+      <div className="grid lg:grid-flow-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-8 w-1300 mx-auto">
         {/* 1 */}
         <div className="col-span-1 lg:col-span-2 h-96 grid-box flex-col w-full p-5 gap-5">
           <div className="text-left w-10/12 mx-auto">
