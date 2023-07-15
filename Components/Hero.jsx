@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <main className="flex flex-col dark-blue-bg h-full lg:h-screen pb-20 lg:pb-0">
       <div className="flex-all relative bottom-20">
-        <Image src="/logo.svg" alt="image" width={1500} height={1500} className="opacity-40" />
+        <Image src="/logo.svg" alt="image" width={1500} height={1500} className="opacity-40 mohit-image" />
         <Image src="/gradient.svg" alt="image" width={1500} height={1500} className="absolute top-16" />
       </div>
       <div className="flex-all relative bottom-48 flex-wrap w-72 md:w-full mx-auto">
