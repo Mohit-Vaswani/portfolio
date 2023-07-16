@@ -8,6 +8,7 @@ import Hero from "@/Components/Hero";
 import Proof from "@/Components/Proof";
 import Stars from "@/Components/Stars";
 import Work from "@/Components/Work";
+import 'tailwindcss/tailwind.css';
 
 export default function Home() {
   return (
